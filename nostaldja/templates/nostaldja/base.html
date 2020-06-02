@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nostal_dja</title>
+</head> 
+
+<body>
+    <h1>Nostal_dja</h1>
+    <nav>
+        <div class="user-info">
+            {% if user.is_authenticated %} Welcome, {{ user.username }}
+            {% endif %}
+        </div>
+        <a href="/">Decades</a>
+        <a href="/fads">Fads</a>
+    </nav>
+    {% block content %} {% endblock %}
+</body>
+
+</html> 
